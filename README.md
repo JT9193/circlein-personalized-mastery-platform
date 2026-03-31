@@ -1,1 +1,1 @@
-# circlein-personalized-master-platform
+# Personalized Mastery Platform
