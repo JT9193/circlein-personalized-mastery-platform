@@ -12,7 +12,7 @@ export function GraphView() {
   const { graphId } = useParams<{ graphId: string }>();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const { studentId, setGraph, setProgress, selectedSkillCode } = useAppStore();
+  const { setGraph, setProgress, selectedSkillCode } = useAppStore();
 
   const [quizState, setQuizState] = useState<{
     open: boolean;
@@ -29,8 +29,8 @@ export function GraphView() {
 
   // Fetch progress
   const { data: progress, refetch: refetchProgress } = useQuery({
-    queryKey: ['progress', studentId, graphId],
-    queryFn: () => fetchProgress(studentId, graphId!),
+    queryKey: ['progress', graphId],
+    queryFn: () => fetchProgress(graphId!),
     enabled: !!graphId,
   });
 

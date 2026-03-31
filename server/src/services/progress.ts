@@ -1,27 +1,25 @@
-import { getDb } from './db.js';
+import { query } from './db.js';
 import { getGraphById } from './graph.js';
 import type { StudentProgress, SkillMastery } from '@mastery/shared';
-import { v4 as uuid } from 'uuid';
 
-export function getStudentProgress(studentId: string, graphId: string): StudentProgress {
-  const db = getDb();
-  const row = db.prepare(
-    'SELECT * FROM student_progress WHERE student_id = ? AND graph_id = ?'
-  ).get(studentId, graphId) as { masteries_json: string; overall_progress: number; updated_at: string } | undefined;
+export async function getStudentProgress(userId: string, graphId: string): Promise<StudentProgress> {
+  const result = await query(
+    'SELECT masteries_json, overall_progress, updated_at FROM student_progress WHERE user_id = $1 AND graph_id = $2',
+    [userId, graphId]
+  );
 
-  if (row) {
+  if (result.rows[0]) {
     return {
-      studentId,
+      studentId: userId,
       graphId,
-      skillMasteries: JSON.parse(row.masteries_json),
-      overallProgress: row.overall_progress,
-      lastUpdated: row.updated_at,
+      skillMasteries: result.rows[0].masteries_json as Record<string, SkillMastery>,
+      overallProgress: result.rows[0].overall_progress,
+      lastUpdated: result.rows[0].updated_at,
     };
   }
 
-  // Return empty progress
   return {
-    studentId,
+    studentId: userId,
     graphId,
     skillMasteries: {},
     overallProgress: 0,
@@ -29,37 +27,27 @@ export function getStudentProgress(studentId: string, graphId: string): StudentP
   };
 }
 
-export function saveStudentProgress(progress: StudentProgress): void {
-  const db = getDb();
-  const graph = getGraphById(progress.graphId);
+export async function saveStudentProgress(progress: StudentProgress): Promise<void> {
+  const graph = await getGraphById(progress.graphId);
   const totalSkills = graph?.nodes.length || 1;
 
-  // Calculate overall progress
   const masteredCount = Object.values(progress.skillMasteries)
     .filter(m => m.level >= 80).length;
   progress.overallProgress = Math.round((masteredCount / totalSkills) * 100);
   progress.lastUpdated = new Date().toISOString();
 
-  db.prepare(`
-    INSERT INTO student_progress (id, student_id, graph_id, masteries_json, overall_progress, updated_at)
-    VALUES (?, ?, ?, ?, ?, ?)
-    ON CONFLICT(student_id, graph_id) DO UPDATE SET
-      masteries_json = excluded.masteries_json,
-      overall_progress = excluded.overall_progress,
-      updated_at = excluded.updated_at
-  `).run(
-    uuid(),
-    progress.studentId,
-    progress.graphId,
-    JSON.stringify(progress.skillMasteries),
-    progress.overallProgress,
-    progress.lastUpdated
+  await query(
+    `INSERT INTO student_progress (user_id, graph_id, masteries_json, overall_progress, updated_at)
+     VALUES ($1, $2, $3, $4, $5)
+     ON CONFLICT (user_id, graph_id) DO UPDATE SET
+       masteries_json = $3, overall_progress = $4, updated_at = $5`,
+    [progress.studentId, progress.graphId, JSON.stringify(progress.skillMasteries), progress.overallProgress, progress.lastUpdated]
   );
 }
 
-export function getProgressSummary(studentId: string, graphId: string) {
-  const progress = getStudentProgress(studentId, graphId);
-  const graph = getGraphById(graphId);
+export async function getProgressSummary(userId: string, graphId: string) {
+  const progress = await getStudentProgress(userId, graphId);
+  const graph = await getGraphById(graphId);
   if (!graph) return null;
 
   const totalSkills = graph.nodes.length;
@@ -81,7 +69,6 @@ export function getProgressSummary(studentId: string, graphId: string) {
     else { testedWeak++; }
   }
 
-  // Suggest next skills: unmastered skills whose prerequisites are all mastered
   const masteredCodes = new Set(
     Object.entries(masteries).filter(([, m]) => m.level >= 80).map(([code]) => code)
   );
@@ -90,14 +77,8 @@ export function getProgressSummary(studentId: string, graphId: string) {
     .slice(0, 5);
 
   return {
-    totalSkills,
-    mastered,
-    inProgress,
-    testedWeak,
-    notStarted,
-    atRisk,
+    totalSkills, mastered, inProgress, testedWeak, notStarted, atRisk,
     overallProgress: progress.overallProgress,
-    byCategory,
-    suggestedNext,
+    byCategory, suggestedNext,
   };
 }

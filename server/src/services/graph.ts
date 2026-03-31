@@ -1,20 +1,18 @@
-import { getDb } from './db.js';
+import { query } from './db.js';
 import type { KnowledgeGraph, SkillNode } from '@mastery/shared';
 
-export function getAllGraphs(): KnowledgeGraph[] {
-  const db = getDb();
-  const rows = db.prepare('SELECT graph_json FROM graphs').all() as { graph_json: string }[];
-  return rows.map(r => JSON.parse(r.graph_json));
+export async function getAllGraphs(): Promise<KnowledgeGraph[]> {
+  const result = await query('SELECT graph_json FROM graphs');
+  return result.rows.map(r => r.graph_json);
 }
 
-export function getGraphById(id: string): KnowledgeGraph | null {
-  const db = getDb();
-  const row = db.prepare('SELECT graph_json FROM graphs WHERE id = ?').get(id) as { graph_json: string } | undefined;
-  return row ? JSON.parse(row.graph_json) : null;
+export async function getGraphById(id: string): Promise<KnowledgeGraph | null> {
+  const result = await query('SELECT graph_json FROM graphs WHERE id = $1', [id]);
+  return result.rows[0]?.graph_json ?? null;
 }
 
-export function getSkillWithContext(graphId: string, skillCode: string) {
-  const graph = getGraphById(graphId);
+export async function getSkillWithContext(graphId: string, skillCode: string) {
+  const graph = await getGraphById(graphId);
   if (!graph) return null;
 
   const skill = graph.nodes.find(n => n.code === skillCode);
@@ -23,16 +21,9 @@ export function getSkillWithContext(graphId: string, skillCode: string) {
   const prerequisites = graph.nodes.filter(n => skill.dependencies.includes(n.code));
   const dependents = graph.nodes.filter(n => n.dependencies.includes(skillCode));
 
-  return {
-    skill,
-    prerequisites,
-    dependents,
-  };
+  return { skill, prerequisites, dependents };
 }
 
-/**
- * Get all transitive prerequisites of a skill (BFS downward through dependencies)
- */
 export function getTransitivePrerequisites(graph: KnowledgeGraph, skillCode: string): string[] {
   const nodeMap = new Map(graph.nodes.map(n => [n.code, n]));
   const visited = new Set<string>();
@@ -54,9 +45,6 @@ export function getTransitivePrerequisites(graph: KnowledgeGraph, skillCode: str
   return Array.from(visited);
 }
 
-/**
- * Get all transitive dependents of a skill (BFS upward through reverse deps)
- */
 export function getTransitiveDependents(graph: KnowledgeGraph, skillCode: string): string[] {
   const visited = new Set<string>();
   const queue = [skillCode];
@@ -74,9 +62,6 @@ export function getTransitiveDependents(graph: KnowledgeGraph, skillCode: string
   return Array.from(visited);
 }
 
-/**
- * Topological sort of graph nodes (Kahn's algorithm)
- */
 export function topologicalSort(graph: KnowledgeGraph): string[] {
   const inDegree = new Map<string, number>();
   const adjList = new Map<string, string[]>();
@@ -114,37 +99,33 @@ export function topologicalSort(graph: KnowledgeGraph): string[] {
   return sorted;
 }
 
-/**
- * Find learning path: unmastered prerequisites in topological order to reach target
- */
-export function getLearningPath(
+export async function getLearningPath(
   graphId: string,
   targetCode: string,
-  studentId?: string
-): { path: SkillNode[]; totalSkills: number } {
-  const graph = getGraphById(graphId);
+  userId?: string
+): Promise<{ path: SkillNode[]; totalSkills: number }> {
+  const graph = await getGraphById(graphId);
   if (!graph) return { path: [], totalSkills: 0 };
 
-  // Get student progress if available
   let masteredSkills = new Set<string>();
-  if (studentId) {
-    const db = getDb();
-    const row = db.prepare('SELECT masteries_json FROM student_progress WHERE student_id = ? AND graph_id = ?').get(studentId, graphId) as { masteries_json: string } | undefined;
-    if (row) {
-      const masteries = JSON.parse(row.masteries_json);
+  if (userId) {
+    const result = await query(
+      'SELECT masteries_json FROM student_progress WHERE user_id = $1 AND graph_id = $2',
+      [userId, graphId]
+    );
+    if (result.rows[0]) {
+      const masteries = result.rows[0].masteries_json as Record<string, { level: number }>;
       for (const [code, mastery] of Object.entries(masteries)) {
-        if ((mastery as { level: number }).level >= 80) {
+        if (mastery.level >= 80) {
           masteredSkills.add(code);
         }
       }
     }
   }
 
-  // Get transitive prerequisites
   const prereqs = getTransitivePrerequisites(graph, targetCode);
   prereqs.push(targetCode);
 
-  // Filter to unmastered and sort topologically
   const topoOrder = topologicalSort(graph);
   const orderMap = new Map(topoOrder.map((code, i) => [code, i]));
 

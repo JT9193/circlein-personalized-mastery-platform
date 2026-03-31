@@ -12,7 +12,7 @@ interface GraphInfo {
 
 export function Dashboard() {
   const navigate = useNavigate();
-  const { studentId } = useAppStore();
+  const { user, logout } = useAppStore();
   const [graphs, setGraphs] = useState<GraphInfo[]>([]);
   const [summaries, setSummaries] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState(true);
@@ -22,11 +22,10 @@ export function Dashboard() {
       try {
         const g = await fetchGraphs();
         setGraphs(g);
-        // Fetch progress for each graph
         const sums: Record<string, any> = {};
         for (const graph of g) {
           try {
-            sums[graph.id] = await fetchProgressSummary(studentId, graph.id);
+            sums[graph.id] = await fetchProgressSummary(graph.id);
           } catch { /* no progress yet */ }
         }
         setSummaries(sums);
@@ -36,15 +35,25 @@ export function Dashboard() {
         setLoading(false);
       }
     })();
-  }, [studentId]);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white border-b border-gray-200">
-        <div className="max-w-5xl mx-auto px-6 py-6">
-          <h1 className="text-2xl font-bold text-gray-900">Mastery Platform</h1>
-          <p className="text-gray-500 mt-1">Track your learning progress with interactive knowledge graphs</p>
+        <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">Mastery Platform</h1>
+            <p className="text-gray-500 mt-1">Track your learning progress with interactive knowledge graphs</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-gray-500">{user?.email}</span>
+            <button
+              onClick={() => { logout(); navigate('/login'); }}
+              className="text-sm text-gray-500 hover:text-gray-700 px-3 py-1.5 border border-gray-300 rounded-md"
+            >
+              Log Out
+            </button>
+          </div>
         </div>
       </header>
 
@@ -69,10 +78,7 @@ export function Dashboard() {
               const total = summary?.totalSkills || graph.nodeCount;
 
               return (
-                <div
-                  key={graph.id}
-                  className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
-                >
+                <div key={graph.id} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h2 className="text-lg font-semibold text-gray-900">{graph.name}</h2>
@@ -85,15 +91,10 @@ export function Dashboard() {
                     </div>
                   </div>
 
-                  {/* Progress bar */}
                   <div className="h-2 bg-gray-200 rounded-full overflow-hidden mb-4">
-                    <div
-                      className="h-full bg-emerald-500 rounded-full transition-all"
-                      style={{ width: `${progress}%` }}
-                    />
+                    <div className="h-full bg-emerald-500 rounded-full transition-all" style={{ width: `${progress}%` }} />
                   </div>
 
-                  {/* Category breakdown */}
                   {summary?.byCategory && (
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-4">
                       {Object.entries(summary.byCategory as Record<string, { total: number; mastered: number }>).slice(0, 6).map(([cat, data]) => (
@@ -105,7 +106,6 @@ export function Dashboard() {
                     </div>
                   )}
 
-                  {/* Suggested next */}
                   {summary?.suggestedNext?.length > 0 && (
                     <div className="mb-4">
                       <p className="text-xs font-semibold text-gray-500 mb-1">Recommended next:</p>

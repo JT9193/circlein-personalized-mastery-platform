@@ -4,21 +4,25 @@ import { getStudentProgress, getProgressSummary } from '../services/progress.js'
 export const studentRoutes = Router();
 
 // Get full student progress for a graph
-studentRoutes.get('/:studentId/progress/:graphId', (req: Request, res: Response) => {
+studentRoutes.get('/progress/:graphId', async (req: Request, res: Response) => {
   try {
-    const progress = getStudentProgress(req.params.studentId, req.params.graphId);
+    const userId = (req as any).user.id;
+    const progress = await getStudentProgress(userId, req.params.graphId as string);
     res.json(progress);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Failed to fetch progress' });
   }
 });
 
 // Get progress summary
-studentRoutes.get('/:studentId/progress/:graphId/summary', (req: Request, res: Response) => {
+studentRoutes.get('/progress/:graphId/summary', async (req: Request, res: Response) => {
   try {
-    const summary = getProgressSummary(req.params.studentId, req.params.graphId);
+    const userId = (req as any).user.id;
+    const summary = await getProgressSummary(userId, req.params.graphId as string);
     res.json(summary);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Failed to fetch summary' });
   }
 });

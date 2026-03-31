@@ -16,7 +16,6 @@ interface Props {
 type Phase = 'loading' | 'intro' | 'questions' | 'submitting' | 'results';
 
 export function QuizContainer({ graphId, mode, skillCode, onClose, onComplete }: Props) {
-  const { studentId } = useAppStore();
   const [phase, setPhase] = useState<Phase>(mode === 'diagnostic' ? 'intro' : 'loading');
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,8 +29,8 @@ export function QuizContainer({ graphId, mode, skillCode, onClose, onComplete }:
     setError(null);
     try {
       const q = mode === 'diagnostic'
-        ? await startDiagnostic(graphId, studentId)
-        : await startSkillQuiz(graphId, skillCode!, studentId);
+        ? await startDiagnostic(graphId)
+        : await startSkillQuiz(graphId, skillCode!);
       setQuiz(q);
       setPhase('questions');
     } catch (err: any) {
@@ -58,7 +57,7 @@ export function QuizContainer({ graphId, mode, skillCode, onClose, onComplete }:
       }));
       const r = await submitQuizApi({
         quizId: quiz.id,
-        studentId,
+        studentId: '', // server overrides from JWT
         graphId,
         answers: quizAnswers,
       });
