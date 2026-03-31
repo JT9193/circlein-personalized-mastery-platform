@@ -1,0 +1,21 @@
+{
+  "skillId": "F-A8",
+  "questions": [
+    {
+      "id": "08032b9f-4047-4043-8305-9cc43409aea8",
+      "skillId": "F-A8",
+      "type": "multiple_choice",
+      "prompt": "Solve the equation: (x + 3)/(x - 2) = 5/(x - 2). Which of the following is true?",
+      "options": [
+        "A) x = 2 is the only solution",
+        "B) x = 2 is an extraneous solution; there are no valid solutions",
+        "C) x = 3 is the only solution",
+        "D) x = 2 and x = 3 are both valid solutions"
+      ],
+      "correctAnswer": "B) x = 2 is an extraneous solution; there are no valid solutions",
+      "explanation": "When solving this equation, we first note that x ≠ 2 (restriction from denominators). Multiplying both sides by (x - 2) gives: x + 3 = 5, so x = 2. However, x = 2 violates the restriction established at the start—it makes the denominator zero. Therefore, x = 2 is an extraneous solution and must be rejected. The equation has no valid solutions. This teaches the critical skill of checking that solutions don't violate domain restrictions.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

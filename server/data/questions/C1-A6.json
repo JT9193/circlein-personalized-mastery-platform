@@ -1,0 +1,21 @@
+{
+  "skillId": "C1-A6",
+  "questions": [
+    {
+      "id": "9ef3bb15-2091-4ebf-9ad1-a2bf7b35caf5",
+      "skillId": "C1-A6",
+      "type": "multiple_choice",
+      "prompt": "Evaluate the limit using direct substitution: lim(x→2) (x² + 3x - 1)",
+      "options": [
+        "A) 9",
+        "B) 11",
+        "C) 13",
+        "D) The limit does not exist"
+      ],
+      "correctAnswer": "A) 9",
+      "explanation": "Direct substitution is valid when the function is continuous at the point. Since f(x) = x² + 3x - 1 is a polynomial (continuous everywhere), we can substitute x = 2 directly: f(2) = (2)² + 3(2) - 1 = 4 + 6 - 1 = 9. Direct substitution works for polynomials, rational functions where the denominator is non-zero, and other continuous functions.",
+      "difficulty": 1,
+      "source": "ai_generated"
+    }
+  ]
+}

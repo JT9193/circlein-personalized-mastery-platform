@@ -1,0 +1,21 @@
+{
+  "skillId": "P-C4",
+  "questions": [
+    {
+      "id": "bae2e5c7-1082-4ce0-b83f-7473d8fa7005",
+      "skillId": "P-C4",
+      "type": "multiple_choice",
+      "prompt": "Which sigma notation correctly represents the sum 2 + 4 + 6 + 8 + 10?",
+      "options": [
+        "A) ∑(i=1 to 5) 2i",
+        "B) ∑(i=1 to 5) i",
+        "C) ∑(i=2 to 10) i",
+        "D) ∑(i=1 to 10) 2i"
+      ],
+      "correctAnswer": "A) ∑(i=1 to 5) 2i",
+      "explanation": "The sum consists of 5 even numbers: 2(1), 2(2), 2(3), 2(4), and 2(5). In sigma notation, this is written as ∑(i=1 to 5) 2i, where the index i starts at 1 and goes to 5, and each term is 2i. Option B only gives odd numbers, option C counts from 2 to 10 (giving incorrect terms), and option D would include 10 terms instead of 5.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

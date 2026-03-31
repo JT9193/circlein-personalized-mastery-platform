@@ -1,0 +1,21 @@
+{
+  "skillId": "P-B2",
+  "questions": [
+    {
+      "id": "30fbc318-a2d4-4803-a45c-f269d9afc2ef",
+      "skillId": "P-B2",
+      "type": "multiple_choice",
+      "prompt": "Simplify the expression 3x + 2x - 5 + 8 before substituting x = 4. What is the simplified form, and what is the final value?",
+      "options": [
+        "A) Simplified: 5x + 3; Final value: 23",
+        "B) Simplified: 5x - 5 + 8; Final value: 27",
+        "C) Simplified: x + 3; Final value: 7",
+        "D) Simplified: 6x + 3; Final value: 27"
+      ],
+      "correctAnswer": "A) Simplified: 5x + 3; Final value: 23",
+      "explanation": "To simplify strategically before substitution, combine like terms first: combine the x terms (3x + 2x = 5x) and the constants (-5 + 8 = 3). This gives 5x + 3. Now substituting x = 4 is much easier: 5(4) + 3 = 20 + 3 = 23. Simplifying first reduces calculation errors and makes the substitution step cleaner than substituting into the original unsimplified expression.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skillId": "F-E10",
+  "questions": [
+    {
+      "id": "d131c941-35f9-4d83-9c2f-6521c8bdcfbd",
+      "skillId": "F-E10",
+      "type": "multiple_choice",
+      "prompt": "A surveyor needs to find the distance across a lake. From point A on the shore, she measures the angle to a tree at point C as 42°. She then walks 150 meters along the shore to point B and measures the angle to the tree as 67°. Using the Law of Sines, which equation correctly represents the relationship to find the distance AC across the lake?",
+      "options": [
+        "A) AC/sin(67°) = 150/sin(71°)",
+        "B) AC/sin(42°) = 150/sin(71°)",
+        "C) 150/sin(42°) = AC/sin(67°)",
+        "D) AC/sin(71°) = 150/sin(42°)"
+      ],
+      "correctAnswer": "A) AC/sin(67°) = 150/sin(71°)",
+      "explanation": "In this triangle, we have side AB = 150 meters (the known side along the shore), angle CAB = 42°, and angle CBA = 67°. The third angle at C must be 180° - 42° - 67° = 71°. Using the Law of Sines, the side opposite an angle is proportional to the sine of that angle: AC is opposite the 67° angle at B, and AB (150 m) is opposite the 71° angle at C. Therefore: AC/sin(67°) = 150/sin(71°). This setup allows the surveyor to solve for AC, the distance across the lake.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

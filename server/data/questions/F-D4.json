@@ -1,0 +1,21 @@
+{
+  "skillId": "F-D4",
+  "questions": [
+    {
+      "id": "9462bf1f-61d7-4e98-8ba7-d4ab8a3cdcb2",
+      "skillId": "F-D4",
+      "type": "multiple_choice",
+      "prompt": "A water tank contains 500 liters at 2:00 PM. At 5:00 PM, it contains 350 liters. What is the rate of change of water volume, and what does it represent?",
+      "options": [
+        "A) 50 liters per hour; the tank is losing water",
+        "B) -50 liters per hour; the tank is losing water at a constant rate",
+        "C) 150 liters per hour; the tank is filling up",
+        "D) -150 liters per hour; the tank is losing water"
+      ],
+      "correctAnswer": "B) -50 liters per hour; the tank is losing water at a constant rate",
+      "explanation": "The slope (rate of change) is calculated as: (change in volume)/(change in time) = (350 - 500)/(5 - 2) = -150/3 = -50 liters per hour. The negative slope indicates the water volume is decreasing. The rate of change tells us the tank loses exactly 50 liters each hour, which is a constant rate of change. This interpretation is crucial for understanding real-world applications of slope.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

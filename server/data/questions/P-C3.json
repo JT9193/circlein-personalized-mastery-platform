@@ -1,0 +1,21 @@
+{
+  "skillId": "P-C3",
+  "questions": [
+    {
+      "id": "e73db3ac-42d8-482a-b5c8-8ed7e246d105",
+      "skillId": "P-C3",
+      "type": "multiple_choice",
+      "prompt": "A geometric sequence has a first term of 2 and a common ratio of 3. Which of the following is the 5th term of this sequence?",
+      "options": [
+        "A) 162",
+        "B) 486",
+        "C) 243",
+        "D) 81"
+      ],
+      "correctAnswer": "A) 162",
+      "explanation": "In a geometric sequence, each term is found by multiplying the previous term by the common ratio r. The nth term formula is: aₙ = a₁ × r^(n-1). Here, a₅ = 2 × 3^(5-1) = 2 × 3⁴ = 2 × 81 = 162. Understanding this formula is essential for working with geometric sequences, as it allows you to find any term without calculating all previous terms.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

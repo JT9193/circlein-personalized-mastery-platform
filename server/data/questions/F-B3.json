@@ -1,0 +1,21 @@
+{
+  "skillId": "F-B3",
+  "questions": [
+    {
+      "id": "fc1084f5-2b72-4b4f-b747-61a597832b27",
+      "skillId": "F-B3",
+      "type": "multiple_choice",
+      "prompt": "Given the function f(x) = 3x² - 2x + 5, what is f(-2)?",
+      "options": [
+        "A) 9",
+        "B) 17",
+        "C) 21",
+        "D) 25"
+      ],
+      "correctAnswer": "C) 21",
+      "explanation": "To evaluate f(-2), substitute x = -2 into the function: f(-2) = 3(-2)² - 2(-2) + 5 = 3(4) + 4 + 5 = 12 + 4 + 5 = 21. This demonstrates the substitution method: replace every instance of the variable with the given value, then follow order of operations to simplify.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

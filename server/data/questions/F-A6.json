@@ -1,0 +1,21 @@
+{
+  "skillId": "F-A6",
+  "questions": [
+    {
+      "id": "e88027d9-20a5-4bc6-bed0-e32e7c29e0c2",
+      "skillId": "F-A6",
+      "type": "multiple_choice",
+      "prompt": "Solve the quadratic equation using the method of your choice: x² + 5x + 6 = 0",
+      "options": [
+        "A) x = -2 or x = -3",
+        "B) x = 2 or x = 3",
+        "C) x = -2 or x = 3",
+        "D) x = 1 or x = 6"
+      ],
+      "correctAnswer": "A) x = -2 or x = -3",
+      "explanation": "This quadratic can be solved by factoring. We need two numbers that multiply to 6 and add to 5. Those numbers are 2 and 3. So x² + 5x + 6 = (x + 2)(x + 3) = 0. Using the zero product property, x + 2 = 0 gives x = -2, and x + 3 = 0 gives x = -3. Alternatively, using the quadratic formula: x = [-5 ± √(25-24)]/2 = [-5 ± 1]/2, which also yields x = -2 or x = -3.",
+      "difficulty": 1,
+      "source": "ai_generated"
+    }
+  ]
+}

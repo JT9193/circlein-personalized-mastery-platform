@@ -1,0 +1,21 @@
+{
+  "skillId": "C1-A10",
+  "questions": [
+    {
+      "id": "8842e1f5-0c28-4c67-9bf7-94c960ce7630",
+      "skillId": "C1-A10",
+      "type": "multiple_choice",
+      "prompt": "Consider the function f(x) = (x + 2)/(x² - 4). Which of the following correctly describes the infinite limits and vertical asymptotes of this function?",
+      "options": [
+        "A) Vertical asymptotes at x = -2 and x = 2; lim(x→2⁺) f(x) = +∞ and lim(x→-2⁻) f(x) = -∞",
+        "B) Vertical asymptote only at x = 2; lim(x→2⁺) f(x) = +∞",
+        "C) Vertical asymptote only at x = -2; the function has a hole at x = 2",
+        "D) No vertical asymptotes; the function is continuous everywhere"
+      ],
+      "correctAnswer": "C) Vertical asymptote only at x = -2; the function has a hole at x = 2",
+      "explanation": "To find vertical asymptotes, we factor the denominator: x² - 4 = (x - 2)(x + 2). The numerator (x + 2) can be canceled with the denominator factor (x + 2), leaving f(x) = 1/(x - 2) for x ≠ -2. This means there is a removable discontinuity (hole) at x = -2, not a vertical asymptote. The vertical asymptote occurs only at x = 2 where the denominator equals zero but the numerator does not. At x = 2, the function exhibits infinite limits: lim(x→2⁺) f(x) = +∞ and lim(x→2⁻) f(x) = -∞.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

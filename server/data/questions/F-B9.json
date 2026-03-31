@@ -1,0 +1,21 @@
+{
+  "skillId": "F-B9",
+  "questions": [
+    {
+      "id": "dfff531d-083f-45d3-b264-0d6810c81988",
+      "skillId": "F-B9",
+      "type": "multiple_choice",
+      "prompt": "A function f(x) represents the cost in dollars to produce x units of a product. If the inverse function f⁻¹(x) exists, what does f⁻¹(500) represent in this context?",
+      "options": [
+        "A) The cost to produce 500 units",
+        "B) The number of units that can be produced for $500",
+        "C) The revenue generated from selling 500 units",
+        "D) The profit when 500 units are sold"
+      ],
+      "correctAnswer": "B) The number of units that can be produced for $500",
+      "explanation": "An inverse function reverses the input and output of the original function. Since f(x) takes units as input and gives cost as output, f⁻¹(x) takes cost as input and gives units as output. Therefore, f⁻¹(500) means: given a cost of $500, how many units can be produced? This demonstrates the conceptual understanding that inverse functions swap the roles of independent and dependent variables.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

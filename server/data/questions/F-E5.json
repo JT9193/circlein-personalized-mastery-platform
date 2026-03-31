@@ -1,0 +1,21 @@
+{
+  "skillId": "F-E5",
+  "questions": [
+    {
+      "id": "fde2fb5b-8fb4-49eb-b8f1-1f836018d3bb",
+      "skillId": "F-E5",
+      "type": "multiple_choice",
+      "prompt": "Given the function f(x) = -2sin(3(x - π/4)) + 5, identify the amplitude, period, phase shift, and vertical shift.",
+      "options": [
+        "A) Amplitude: 2, Period: 2π/3, Phase shift: π/4 right, Vertical shift: 5 up",
+        "B) Amplitude: -2, Period: 2π/3, Phase shift: π/4 left, Vertical shift: 5 up",
+        "C) Amplitude: 2, Period: 3π/2, Phase shift: π/4 right, Vertical shift: 5 down",
+        "D) Amplitude: 2, Period: 2π/3, Phase shift: π/4 left, Vertical shift: 5 up"
+      ],
+      "correctAnswer": "A) Amplitude: 2, Period: 2π/3, Phase shift: π/4 right, Vertical shift: 5 up",
+      "explanation": "For a sinusoidal function in the form f(x) = A·sin(B(x - C)) + D: The amplitude is the absolute value of A, so |-2| = 2. The period is 2π/B = 2π/3. The phase shift is C units to the right (note the negative sign in the parentheses indicates the shift direction). The vertical shift is D = 5 units up. The negative sign in front of the amplitude only affects the reflection, not the amplitude value itself.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skillId": "F-D6",
+  "questions": [
+    {
+      "id": "666704b0-2c1a-4286-9742-faa5e5a1b463",
+      "skillId": "F-D6",
+      "type": "multiple_choice",
+      "prompt": "Which of the following equations represents a hyperbola?",
+      "options": [
+        "A) x² + y² = 25",
+        "B) x²/16 - y²/9 = 1",
+        "C) y² = 8x",
+        "D) x²/25 + y²/16 = 1"
+      ],
+      "correctAnswer": "B) x²/16 - y²/9 = 1",
+      "explanation": "A hyperbola is characterized by a subtraction (difference) between the squared terms in its standard form. The equation x²/a² - y²/b² = 1 represents a hyperbola opening horizontally, while y²/b² - x²/a² = 1 opens vertically. The other options represent: A) a circle (x² + y² = r²), C) a parabola (y² = 4px), and D) an ellipse (x²/a² + y²/b² = 1 where a ≠ b). The key distinguishing feature of a hyperbola is the minus sign between the two squared terms.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

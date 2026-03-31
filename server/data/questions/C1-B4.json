@@ -1,0 +1,21 @@
+{
+  "skillId": "C1-B4",
+  "questions": [
+    {
+      "id": "c7e32fe6-fd8b-4b8a-9a10-e40caf20a79b",
+      "skillId": "C1-B4",
+      "type": "multiple_choice",
+      "prompt": "Consider the function f(x) = (x² - 4)/(x - 2). What type of discontinuity does this function have at x = 2?",
+      "options": [
+        "A) Removable discontinuity",
+        "B) Jump discontinuity",
+        "C) Infinite discontinuity",
+        "D) The function is continuous at x = 2"
+      ],
+      "correctAnswer": "A) Removable discontinuity",
+      "explanation": "This function has a removable discontinuity at x = 2. By factoring the numerator: f(x) = (x - 2)(x + 2)/(x - 2) = (x + 2) for x ≠ 2. The discontinuity can be 'removed' by redefining f(2) = 4, making the function continuous. This is characteristic of removable discontinuities: the limit exists (lim x→2 f(x) = 4) but either the function is undefined or defined differently at that point. Jump discontinuities occur when left and right limits differ, while infinite discontinuities involve vertical asymptotes.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skillId": "C1-C4",
+  "questions": [
+    {
+      "id": "d1117571-0c7a-4f8d-8592-948c797615d4",
+      "skillId": "C1-C4",
+      "type": "multiple_choice",
+      "prompt": "At a point on the curve f(x) = x², the tangent line has a slope of 6. What is the x-coordinate of this point?",
+      "options": [
+        "A) x = 2",
+        "B) x = 3",
+        "C) x = 6",
+        "D) x = 12"
+      ],
+      "correctAnswer": "B) x = 3",
+      "explanation": "The derivative f'(x) = 2x represents the slope of the tangent line at any point on the curve. We need to find where f'(x) = 6. Setting 2x = 6 gives x = 3. This demonstrates that the derivative geometrically represents the slope of the tangent line: at the point (3, 9), the tangent line to the parabola has a slope of 6.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

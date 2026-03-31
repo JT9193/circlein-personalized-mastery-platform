@@ -1,0 +1,21 @@
+{
+  "skillId": "F-C4",
+  "questions": [
+    {
+      "id": "0d935863-3faa-4a64-ba4f-f54d337db4c2",
+      "skillId": "F-C4",
+      "type": "multiple_choice",
+      "prompt": "If 2^3 = 8, which logarithmic equation expresses the same relationship?",
+      "options": [
+        "A) log₂(8) = 3",
+        "B) log₃(8) = 2",
+        "C) log₈(2) = 3",
+        "D) log₂(3) = 8"
+      ],
+      "correctAnswer": "A) log₂(8) = 3",
+      "explanation": "Exponential and logarithmic equations are inverses of each other. The exponential form b^x = y converts to logarithmic form log_b(y) = x. Since 2^3 = 8, the inverse relationship is log₂(8) = 3. This shows that the logarithm answers the question: 'To what power must we raise 2 to get 8?' The answer is 3.",
+      "difficulty": 1,
+      "source": "ai_generated"
+    }
+  ]
+}

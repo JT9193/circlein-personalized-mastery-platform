@@ -1,0 +1,3 @@
+- Add option to add timer to diagnotsic quiz
+- different types of questions that aren't multiple choice
+- Recommendation on the home page of which skill to review and practice next

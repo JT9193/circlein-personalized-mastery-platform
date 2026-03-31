@@ -1,0 +1,21 @@
+{
+  "skillId": "P-A1",
+  "questions": [
+    {
+      "id": "3b5c223a-2dcb-46cf-8ddf-8b2636e670e2",
+      "skillId": "P-A1",
+      "type": "multiple_choice",
+      "prompt": "A function f(x) represents the distance (in kilometers) traveled by a car at time x (in hours). If f(2) = 85 and f(5) = 190, what is the average rate of change of the car's distance over the interval [2, 5]?",
+      "options": [
+        "A) 35 km/hour",
+        "B) 25 km/hour",
+        "C) 105 km/hour",
+        "D) 19 km/hour"
+      ],
+      "correctAnswer": "A) 35 km/hour",
+      "explanation": "The average rate of change over an interval [a, b] is calculated using the formula: (f(b) - f(a)) / (b - a). Here, we compute (f(5) - f(2)) / (5 - 2) = (190 - 85) / 3 = 105 / 3 = 35 km/hour. This represents the constant speed the car would need to travel to cover the same distance in the same time period.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "skillId": "F-C2",
+  "questions": [
+    {
+      "id": "c845e3b1-0188-40b2-a07e-927ac2c28218",
+      "skillId": "F-C2",
+      "type": "multiple_choice",
+      "prompt": "Consider the rational function f(x) = (x² - 4)/(x² - 2x - 8). Which of the following correctly identifies all vertical asymptotes and holes?",
+      "options": [
+        "A) Vertical asymptote at x = -2; hole at x = 4",
+        "B) Vertical asymptote at x = 4; hole at x = -2",
+        "C) Vertical asymptotes at x = -2 and x = 4",
+        "D) Hole at x = 2; vertical asymptote at x = -4"
+      ],
+      "correctAnswer": "B) Vertical asymptote at x = 4; hole at x = -2",
+      "explanation": "To find vertical asymptotes and holes, factor both numerator and denominator. Numerator: x² - 4 = (x - 2)(x + 2). Denominator: x² - 2x - 8 = (x - 4)(x + 2). The common factor (x + 2) creates a hole at x = -2 (found by setting x + 2 = 0). The factor (x - 4) in the denominator only has no matching factor in the numerator, creating a vertical asymptote at x = 4. Holes occur where both numerator and denominator equal zero; vertical asymptotes occur where only the denominator equals zero.",
+      "difficulty": 2,
+      "source": "ai_generated"
+    }
+  ]
+}
