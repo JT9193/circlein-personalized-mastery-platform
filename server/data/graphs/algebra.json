@@ -1,0 +1,3211 @@
+{
+  "id": "algebra",
+  "name": "Algebra Skills Graph",
+  "description": "Comprehensive calculus skills graph spanning Foundations, Precalculus, Calc I, II, and III",
+  "nodes": [
+    {
+      "id": "F-A1",
+      "code": "F-A1",
+      "title": "Read and write integers",
+      "description": "Identify positive, negative, and zero. Compare and order integers.",
+      "dependencies": [],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A2",
+      "code": "F-A2",
+      "title": "Add and subtract integers",
+      "description": "Model integer addition and subtraction. Apply sign rules accurately.",
+      "dependencies": [
+        "F-A1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A3",
+      "code": "F-A3",
+      "title": "Multiply and divide integers",
+      "description": "Apply sign rules for multiplication and division.",
+      "dependencies": [
+        "F-A1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A4",
+      "code": "F-A4",
+      "title": "Understand fractions as numbers",
+      "description": "Interpret numerator and denominator. Place fractions on a number line.",
+      "dependencies": [],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A5",
+      "code": "F-A5",
+      "title": "Generate equivalent fractions",
+      "description": "Simplify fractions. Create common denominators.",
+      "dependencies": [
+        "F-A4"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A6",
+      "code": "F-A6",
+      "title": "Add and subtract fractions",
+      "description": "With like denominators. With unlike denominators.",
+      "dependencies": [
+        "F-A5"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A7",
+      "code": "F-A7",
+      "title": "Multiply and divide fractions",
+      "description": "Multiply fractions and mixed numbers. Divide by fractions using reciprocal reasoning.",
+      "dependencies": [
+        "F-A5"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A8",
+      "code": "F-A8",
+      "title": "Convert among fractions, decimals, and percents",
+      "description": "Convert in all directions. Interpret percent as “per hundred.”",
+      "dependencies": [
+        "F-A4",
+        "F-A5"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A9",
+      "code": "F-A9",
+      "title": "Use order of operations",
+      "description": "Evaluate numeric expressions with parentheses, exponents, multiplication/division, addition/subtraction.",
+      "dependencies": [
+        "F-A2",
+        "F-A3",
+        "F-A6",
+        "F-A7"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-A10",
+      "code": "F-A10",
+      "title": "Estimate and judge reasonableness",
+      "description": "Use benchmarks and mental math. Detect implausible answers.",
+      "dependencies": [
+        "F-A2",
+        "F-A3",
+        "F-A4",
+        "F-A5",
+        "F-A6",
+        "F-A7",
+        "F-A8",
+        "F-A9"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Number sense and arithmetic fluency"
+    },
+    {
+      "id": "F-B1",
+      "code": "F-B1",
+      "title": "Understand ratios",
+      "description": "Describe ratio relationships verbally and symbolically.",
+      "dependencies": [
+        "F-A4",
+        "F-A8"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Ratio, rate, and proportional reasoning"
+    },
+    {
+      "id": "F-B2",
+      "code": "F-B2",
+      "title": "Use unit rates",
+      "description": "Compute unit price, speed, and other per-1 quantities.",
+      "dependencies": [
+        "F-B1",
+        "F-A7"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Ratio, rate, and proportional reasoning"
+    },
+    {
+      "id": "F-B3",
+      "code": "F-B3",
+      "title": "Recognize proportional relationships",
+      "description": "Identify constant multiplicative change.",
+      "dependencies": [
+        "F-B1",
+        "F-B2"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Ratio, rate, and proportional reasoning"
+    },
+    {
+      "id": "F-B4",
+      "code": "F-B4",
+      "title": "Solve proportions",
+      "description": "Use tables, scaling, equations, and cross multiplication conceptually.",
+      "dependencies": [
+        "F-B3"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Ratio, rate, and proportional reasoning"
+    },
+    {
+      "id": "F-B5",
+      "code": "F-B5",
+      "title": "Interpret percent increase and decrease",
+      "description": "Solve discount, tax, markup, and growth problems.",
+      "dependencies": [
+        "F-A8",
+        "F-B3"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Ratio, rate, and proportional reasoning"
+    },
+    {
+      "id": "F-C1",
+      "code": "F-C1",
+      "title": "Interpret variables as unknowns",
+      "description": "Recognize letters standing for numbers.",
+      "dependencies": [
+        "F-A9"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C2",
+      "code": "F-C2",
+      "title": "Translate verbal phrases into expressions",
+      "description": "Example: “three less than twice a number.”",
+      "dependencies": [
+        "F-C1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C3",
+      "code": "F-C3",
+      "title": "Evaluate expressions with substitution",
+      "description": "Replace variables with values.",
+      "dependencies": [
+        "F-C1",
+        "F-A9"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C4",
+      "code": "F-C4",
+      "title": "Use the distributive property numerically",
+      "description": "Expand and factor simple numeric forms.",
+      "dependencies": [
+        "F-A9"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C5",
+      "code": "F-C5",
+      "title": "Combine like terms conceptually",
+      "description": "Recognize same units / same variable parts.",
+      "dependencies": [
+        "F-C1",
+        "F-C2"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C6",
+      "code": "F-C6",
+      "title": "Solve one-step equations",
+      "description": "Using inverse operations.",
+      "dependencies": [
+        "F-C1",
+        "F-C3"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-C7",
+      "code": "F-C7",
+      "title": "Solve one-step inequalities",
+      "description": "Interpret solution sets on a number line.",
+      "dependencies": [
+        "F-C6",
+        "F-A1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Early algebraic thinking"
+    },
+    {
+      "id": "F-D1",
+      "code": "F-D1",
+      "title": "Locate points in the coordinate plane",
+      "description": "Plot ordered pairs. Identify quadrants and axes.",
+      "dependencies": [
+        "F-A1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Coordinate plane and graph readiness"
+    },
+    {
+      "id": "F-D2",
+      "code": "F-D2",
+      "title": "Interpret x- and y-values in context",
+      "description": "Recognize independent vs dependent quantity informally.",
+      "dependencies": [
+        "F-D1"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Coordinate plane and graph readiness"
+    },
+    {
+      "id": "F-D3",
+      "code": "F-D3",
+      "title": "Recognize patterns in tables",
+      "description": "Identify additive and multiplicative patterns.",
+      "dependencies": [
+        "F-B3",
+        "F-D2"
+      ],
+      "category": "Foundational Readiness Nodes",
+      "subcategory": "Coordinate plane and graph readiness"
+    },
+    {
+      "id": "E-A1",
+      "code": "E-A1",
+      "title": "Identify parts of an expression",
+      "description": "Terms, coefficients, constants, variables, exponents.",
+      "dependencies": [
+        "F-C1",
+        "F-C2"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A2",
+      "code": "E-A2",
+      "title": "Evaluate algebraic expressions",
+      "description": "Substitute values and simplify accurately.",
+      "dependencies": [
+        "E-A1",
+        "F-C3"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A3",
+      "code": "E-A3",
+      "title": "Apply order of operations in algebraic expressions",
+      "description": "Includes parentheses and exponents with variables.",
+      "dependencies": [
+        "E-A2",
+        "F-A9"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A4",
+      "code": "E-A4",
+      "title": "Combine like terms",
+      "description": "Simplify single-variable and multi-variable expressions.",
+      "dependencies": [
+        "E-A1",
+        "F-C5"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A5",
+      "code": "E-A5",
+      "title": "Use the distributive property with variables",
+      "description": "Expand expressions like 3(x + 4).",
+      "dependencies": [
+        "E-A1",
+        "F-C4"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A6",
+      "code": "E-A6",
+      "title": "Factor out the greatest common factor from expressions",
+      "description": "Reverse the distributive property.",
+      "dependencies": [
+        "E-A5"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-A7",
+      "code": "E-A7",
+      "title": "Simplify expressions with multiple operations",
+      "description": "Combine distribution, like terms, and substitution.",
+      "dependencies": [
+        "E-A4",
+        "E-A5",
+        "E-A6"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Algebraic expressions"
+    },
+    {
+      "id": "E-B1",
+      "code": "E-B1",
+      "title": "Determine whether two expressions are equivalent",
+      "description": "Check by simplification, substitution, or structure.",
+      "dependencies": [
+        "E-A4",
+        "E-A5"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Equivalent expressions and structure"
+    },
+    {
+      "id": "E-B2",
+      "code": "E-B2",
+      "title": "Interpret structure in expressions",
+      "description": "See 5x + 2 as “5 groups of x and 2 more.”",
+      "dependencies": [
+        "E-A1",
+        "E-B1"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Equivalent expressions and structure"
+    },
+    {
+      "id": "E-B3",
+      "code": "E-B3",
+      "title": "Rewrite expressions for purpose",
+      "description": "Example: rewrite 2x + 2y as 2(x + y).",
+      "dependencies": [
+        "E-A6",
+        "E-B2"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Equivalent expressions and structure"
+    },
+    {
+      "id": "E-B4",
+      "code": "E-B4",
+      "title": "Represent real situations with expressions",
+      "description": "Build expressions from contexts.",
+      "dependencies": [
+        "F-C2",
+        "E-A1",
+        "E-B2"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Equivalent expressions and structure"
+    },
+    {
+      "id": "E-B5",
+      "code": "E-B5",
+      "title": "Interpret units in expressions",
+      "description": "Recognize what terms mean in context.",
+      "dependencies": [
+        "E-B4"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Equivalent expressions and structure"
+    },
+    {
+      "id": "E-C1",
+      "code": "E-C1",
+      "title": "Understand exponent notation",
+      "description": "Interpret repeated multiplication.",
+      "dependencies": [
+        "F-A3"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C2",
+      "code": "E-C2",
+      "title": "Evaluate powers of integers and rational numbers",
+      "description": "",
+      "dependencies": [
+        "E-C1",
+        "F-A9"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C3",
+      "code": "E-C3",
+      "title": "Apply product of powers rule",
+      "description": "",
+      "dependencies": [
+        "E-C1"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C4",
+      "code": "E-C4",
+      "title": "Apply quotient of powers rule",
+      "description": "",
+      "dependencies": [
+        "E-C1"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C5",
+      "code": "E-C5",
+      "title": "Apply power of a power rule",
+      "description": "",
+      "dependencies": [
+        "E-C1"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C6",
+      "code": "E-C6",
+      "title": "Understand zero exponent",
+      "description": "",
+      "dependencies": [
+        "E-C3",
+        "E-C4"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C7",
+      "code": "E-C7",
+      "title": "Understand negative exponents conceptually",
+      "description": "",
+      "dependencies": [
+        "E-C4",
+        "F-A7"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "E-C8",
+      "code": "E-C8",
+      "title": "Simplify exponential expressions using exponent rules",
+      "description": "",
+      "dependencies": [
+        "E-C3",
+        "E-C4",
+        "E-C5",
+        "E-C6",
+        "E-C7"
+      ],
+      "category": "Expressions and Algebraic Structure",
+      "subcategory": "Exponent foundations"
+    },
+    {
+      "id": "Q-A1",
+      "code": "Q-A1",
+      "title": "Understand equality as balance",
+      "description": "Both sides represent the same value.",
+      "dependencies": [
+        "F-C6"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A2",
+      "code": "Q-A2",
+      "title": "Solve one-step equations fluently",
+      "description": "",
+      "dependencies": [
+        "F-C6",
+        "Q-A1"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A3",
+      "code": "Q-A3",
+      "title": "Solve two-step equations",
+      "description": "",
+      "dependencies": [
+        "Q-A2",
+        "E-A4"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A4",
+      "code": "Q-A4",
+      "title": "Solve multi-step equations",
+      "description": "Includes combining like terms first.",
+      "dependencies": [
+        "Q-A3",
+        "E-A7"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A5",
+      "code": "Q-A5",
+      "title": "Solve equations with variables on both sides",
+      "description": "",
+      "dependencies": [
+        "Q-A4",
+        "E-A4"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A6",
+      "code": "Q-A6",
+      "title": "Solve equations with parentheses / distribution",
+      "description": "",
+      "dependencies": [
+        "E-A5",
+        "Q-A4"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A7",
+      "code": "Q-A7",
+      "title": "Solve literal equations for a specified variable",
+      "description": "Example: solve A = lw for w.",
+      "dependencies": [
+        "Q-A5"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A8",
+      "code": "Q-A8",
+      "title": "Identify no-solution and infinitely-many-solutions cases",
+      "description": "",
+      "dependencies": [
+        "Q-A5",
+        "E-B1"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-A9",
+      "code": "Q-A9",
+      "title": "Check solutions to equations",
+      "description": "Substitute back and verify.",
+      "dependencies": [
+        "Q-A2",
+        "E-A2"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving equations"
+    },
+    {
+      "id": "Q-B1",
+      "code": "Q-B1",
+      "title": "Translate verbal statements into equations",
+      "description": "",
+      "dependencies": [
+        "F-C2",
+        "Q-A1"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Modeling with equations"
+    },
+    {
+      "id": "Q-B2",
+      "code": "Q-B2",
+      "title": "Write equations from word problems",
+      "description": "",
+      "dependencies": [
+        "Q-B1",
+        "E-B4"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Modeling with equations"
+    },
+    {
+      "id": "Q-B3",
+      "code": "Q-B3",
+      "title": "Solve contextual equations and interpret answers",
+      "description": "",
+      "dependencies": [
+        "Q-B2",
+        "Q-A4",
+        "Q-A9"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Modeling with equations"
+    },
+    {
+      "id": "Q-B4",
+      "code": "Q-B4",
+      "title": "Recognize when an answer is unreasonable in context",
+      "description": "",
+      "dependencies": [
+        "Q-B3",
+        "F-A10"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Modeling with equations"
+    },
+    {
+      "id": "Q-C1",
+      "code": "Q-C1",
+      "title": "Interpret inequality symbols",
+      "description": "<, >, ≤, ≥",
+      "dependencies": [
+        "F-A1",
+        "F-C7"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C2",
+      "code": "Q-C2",
+      "title": "Solve one-step inequalities",
+      "description": "",
+      "dependencies": [
+        "F-C7",
+        "Q-C1"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C3",
+      "code": "Q-C3",
+      "title": "Solve two-step inequalities",
+      "description": "",
+      "dependencies": [
+        "Q-C2",
+        "Q-A3"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C4",
+      "code": "Q-C4",
+      "title": "Solve multi-step inequalities",
+      "description": "",
+      "dependencies": [
+        "Q-C3",
+        "Q-A4"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C5",
+      "code": "Q-C5",
+      "title": "Reverse inequality sign when multiplying/dividing by a negative",
+      "description": "",
+      "dependencies": [
+        "Q-C2",
+        "F-A1"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C6",
+      "code": "Q-C6",
+      "title": "Graph solutions to inequalities on a number line",
+      "description": "",
+      "dependencies": [
+        "Q-C1",
+        "Q-C2"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C7",
+      "code": "Q-C7",
+      "title": "Write and solve inequalities from context",
+      "description": "",
+      "dependencies": [
+        "Q-B1",
+        "Q-C4",
+        "Q-C6"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "Q-C8",
+      "code": "Q-C8",
+      "title": "Interpret compound inequalities",
+      "description": "",
+      "dependencies": [
+        "Q-C4",
+        "Q-C6"
+      ],
+      "category": "Equations and Inequalities",
+      "subcategory": "Solving inequalities"
+    },
+    {
+      "id": "R-A1",
+      "code": "R-A1",
+      "title": "Recognize a relation as a set of ordered pairs",
+      "description": "",
+      "dependencies": [
+        "F-D1"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-A2",
+      "code": "R-A2",
+      "title": "Represent relations using tables, graphs, mappings, and equations",
+      "description": "",
+      "dependencies": [
+        "R-A1",
+        "F-D3"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-A3",
+      "code": "R-A3",
+      "title": "Identify domain and range from a relation",
+      "description": "",
+      "dependencies": [
+        "R-A1"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-A4",
+      "code": "R-A4",
+      "title": "Determine whether a relation is a function",
+      "description": "One input gives exactly one output.",
+      "dependencies": [
+        "R-A1",
+        "R-A3"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-A5",
+      "code": "R-A5",
+      "title": "Use function notation",
+      "description": "Evaluate f(x), interpret input/output.",
+      "dependencies": [
+        "R-A4",
+        "E-A2"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-A6",
+      "code": "R-A6",
+      "title": "Interpret a function in context",
+      "description": "",
+      "dependencies": [
+        "R-A5",
+        "F-D2"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Foundations of relations and functions"
+    },
+    {
+      "id": "R-B1",
+      "code": "R-B1",
+      "title": "Move among table, graph, equation, and verbal description",
+      "description": "",
+      "dependencies": [
+        "R-A2",
+        "R-A4"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Multiple representations of functions"
+    },
+    {
+      "id": "R-B2",
+      "code": "R-B2",
+      "title": "Identify independent and dependent variables formally",
+      "description": "",
+      "dependencies": [
+        "F-D2",
+        "R-A6"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Multiple representations of functions"
+    },
+    {
+      "id": "R-B3",
+      "code": "R-B3",
+      "title": "Determine whether a graph represents a function",
+      "description": "Use the vertical line test conceptually.",
+      "dependencies": [
+        "R-A4",
+        "F-D1"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Multiple representations of functions"
+    },
+    {
+      "id": "R-B4",
+      "code": "R-B4",
+      "title": "Compare functions represented in different ways",
+      "description": "Compare rate of change, intercept, and outputs.",
+      "dependencies": [
+        "R-B1",
+        "R-A5"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Multiple representations of functions"
+    },
+    {
+      "id": "R-B5",
+      "code": "R-B5",
+      "title": "Interpret key features from representations",
+      "description": "Intercepts, increasing/decreasing, discrete vs continuous.",
+      "dependencies": [
+        "R-B1",
+        "R-B4"
+      ],
+      "category": "Relations and Functions",
+      "subcategory": "Multiple representations of functions"
+    },
+    {
+      "id": "L-A1",
+      "code": "L-A1",
+      "title": "Understand constant rate of change",
+      "description": "Connect tables, graphs, and contexts.",
+      "dependencies": [
+        "F-B3",
+        "F-D3",
+        "R-A6"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-A2",
+      "code": "L-A2",
+      "title": "Calculate slope from a graph",
+      "description": "Rise over run.",
+      "dependencies": [
+        "F-D1",
+        "L-A1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-A3",
+      "code": "L-A3",
+      "title": "Calculate slope from two points",
+      "description": "",
+      "dependencies": [
+        "L-A2",
+        "F-A6"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-A4",
+      "code": "L-A4",
+      "title": "Calculate slope from a table",
+      "description": "",
+      "dependencies": [
+        "L-A1",
+        "L-A3"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-A5",
+      "code": "L-A5",
+      "title": "Interpret slope in context",
+      "description": "Unit rate, trend, and meaning of sign.",
+      "dependencies": [
+        "L-A1",
+        "L-A3"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-A6",
+      "code": "L-A6",
+      "title": "Distinguish positive, negative, zero, and undefined slope",
+      "description": "",
+      "dependencies": [
+        "L-A2"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Slope and rate of change"
+    },
+    {
+      "id": "L-B1",
+      "code": "L-B1",
+      "title": "Recognize y = mx + b form",
+      "description": "",
+      "dependencies": [
+        "E-A1",
+        "L-A1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B2",
+      "code": "L-B2",
+      "title": "Identify slope and y-intercept from slope-intercept form",
+      "description": "",
+      "dependencies": [
+        "L-B1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B3",
+      "code": "L-B3",
+      "title": "Graph a line from slope-intercept form",
+      "description": "",
+      "dependencies": [
+        "L-B2",
+        "F-D1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B4",
+      "code": "L-B4",
+      "title": "Graph a line from a table of values",
+      "description": "",
+      "dependencies": [
+        "R-B1",
+        "L-A4"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B5",
+      "code": "L-B5",
+      "title": "Graph a line from two points",
+      "description": "",
+      "dependencies": [
+        "L-A3",
+        "F-D1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B6",
+      "code": "L-B6",
+      "title": "Identify x- and y-intercepts from a graph",
+      "description": "",
+      "dependencies": [
+        "L-B3"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-B7",
+      "code": "L-B7",
+      "title": "Find intercepts algebraically for a linear equation",
+      "description": "",
+      "dependencies": [
+        "Q-A3",
+        "L-B1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Graphing linear equations"
+    },
+    {
+      "id": "L-C1",
+      "code": "L-C1",
+      "title": "Write a linear equation in slope-intercept form",
+      "description": "",
+      "dependencies": [
+        "L-B1",
+        "Q-A4"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C2",
+      "code": "L-C2",
+      "title": "Write a linear equation in point-slope form",
+      "description": "",
+      "dependencies": [
+        "L-A3"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C3",
+      "code": "L-C3",
+      "title": "Write a linear equation in standard form",
+      "description": "",
+      "dependencies": [
+        "Q-A4",
+        "L-C1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C4",
+      "code": "L-C4",
+      "title": "Convert among linear forms",
+      "description": "",
+      "dependencies": [
+        "L-C1",
+        "L-C2",
+        "L-C3"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C5",
+      "code": "L-C5",
+      "title": "Write an equation of a line from slope and a point",
+      "description": "",
+      "dependencies": [
+        "L-C2"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C6",
+      "code": "L-C6",
+      "title": "Write an equation of a line from two points",
+      "description": "",
+      "dependencies": [
+        "L-A3",
+        "L-C2"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C7",
+      "code": "L-C7",
+      "title": "Write an equation of a line from a graph",
+      "description": "",
+      "dependencies": [
+        "L-A2",
+        "L-B6",
+        "L-C1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-C8",
+      "code": "L-C8",
+      "title": "Write an equation of a line from a table",
+      "description": "",
+      "dependencies": [
+        "L-A4",
+        "L-C1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Forms of linear equations"
+    },
+    {
+      "id": "L-D1",
+      "code": "L-D1",
+      "title": "Determine whether a relationship is linear",
+      "description": "",
+      "dependencies": [
+        "L-A1",
+        "R-A4"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "L-D2",
+      "code": "L-D2",
+      "title": "Compare linear functions from different representations",
+      "description": "",
+      "dependencies": [
+        "R-B4",
+        "L-C4"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "L-D3",
+      "code": "L-D3",
+      "title": "Interpret slope and intercepts in context",
+      "description": "",
+      "dependencies": [
+        "L-A5",
+        "L-B7"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "L-D4",
+      "code": "L-D4",
+      "title": "Model real-world situations with linear functions",
+      "description": "",
+      "dependencies": [
+        "Q-B2",
+        "L-C1",
+        "R-A6"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "L-D5",
+      "code": "L-D5",
+      "title": "Distinguish linear vs nonlinear patterns",
+      "description": "",
+      "dependencies": [
+        "L-D1",
+        "R-B5"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "L-D6",
+      "code": "L-D6",
+      "title": "Identify arithmetic sequences as linear functions",
+      "description": "",
+      "dependencies": [
+        "F-D3",
+        "L-A1"
+      ],
+      "category": "Linear Functions and Linear Equations",
+      "subcategory": "Analyze linear relationships"
+    },
+    {
+      "id": "S-A1",
+      "code": "S-A1",
+      "title": "Understand a solution to a system as an intersection point",
+      "description": "",
+      "dependencies": [
+        "L-B3",
+        "R-A1"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A2",
+      "code": "S-A2",
+      "title": "Solve systems by graphing",
+      "description": "",
+      "dependencies": [
+        "S-A1",
+        "L-B3"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A3",
+      "code": "S-A3",
+      "title": "Solve systems by substitution",
+      "description": "",
+      "dependencies": [
+        "Q-A5",
+        "L-C4"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A4",
+      "code": "S-A4",
+      "title": "Solve systems by elimination",
+      "description": "",
+      "dependencies": [
+        "Q-A4",
+        "E-A5"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A5",
+      "code": "S-A5",
+      "title": "Choose an efficient method for solving a system",
+      "description": "",
+      "dependencies": [
+        "S-A2",
+        "S-A3",
+        "S-A4"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A6",
+      "code": "S-A6",
+      "title": "Interpret the solution of a system in context",
+      "description": "",
+      "dependencies": [
+        "S-A1",
+        "S-A5"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A7",
+      "code": "S-A7",
+      "title": "Identify no-solution and infinitely-many-solutions systems",
+      "description": "",
+      "dependencies": [
+        "S-A2",
+        "S-A3",
+        "S-A4",
+        "Q-A8"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-A8",
+      "code": "S-A8",
+      "title": "Write a system from a real-world context",
+      "description": "",
+      "dependencies": [
+        "Q-B2",
+        "L-D4"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of equations"
+    },
+    {
+      "id": "S-B1",
+      "code": "S-B1",
+      "title": "Graph a linear inequality in the coordinate plane",
+      "description": "",
+      "dependencies": [
+        "Q-C6",
+        "L-B3"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of inequalities"
+    },
+    {
+      "id": "S-B2",
+      "code": "S-B2",
+      "title": "Determine the shading region for a linear inequality",
+      "description": "",
+      "dependencies": [
+        "S-B1"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of inequalities"
+    },
+    {
+      "id": "S-B3",
+      "code": "S-B3",
+      "title": "Graph a system of linear inequalities",
+      "description": "",
+      "dependencies": [
+        "S-B1",
+        "S-B2"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of inequalities"
+    },
+    {
+      "id": "S-B4",
+      "code": "S-B4",
+      "title": "Identify feasible regions in context",
+      "description": "",
+      "dependencies": [
+        "S-B3"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of inequalities"
+    },
+    {
+      "id": "S-B5",
+      "code": "S-B5",
+      "title": "Model constraints with systems of inequalities",
+      "description": "",
+      "dependencies": [
+        "Q-C7",
+        "S-B3"
+      ],
+      "category": "Systems of Linear Equations and Inequalities",
+      "subcategory": "Systems of inequalities"
+    },
+    {
+      "id": "P-A1",
+      "code": "P-A1",
+      "title": "Recognize a polynomial expression",
+      "description": "Distinguish monomial, binomial, trinomial.",
+      "dependencies": [
+        "E-A1",
+        "E-C1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial structure"
+    },
+    {
+      "id": "P-A2",
+      "code": "P-A2",
+      "title": "Identify degree and leading coefficient",
+      "description": "",
+      "dependencies": [
+        "P-A1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial structure"
+    },
+    {
+      "id": "P-A3",
+      "code": "P-A3",
+      "title": "Classify polynomials by degree and number of terms",
+      "description": "",
+      "dependencies": [
+        "P-A2"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial structure"
+    },
+    {
+      "id": "P-B1",
+      "code": "P-B1",
+      "title": "Add polynomials",
+      "description": "",
+      "dependencies": [
+        "E-A4",
+        "P-A1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-B2",
+      "code": "P-B2",
+      "title": "Subtract polynomials",
+      "description": "",
+      "dependencies": [
+        "E-A4",
+        "P-A1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-B3",
+      "code": "P-B3",
+      "title": "Multiply a monomial by a polynomial",
+      "description": "",
+      "dependencies": [
+        "E-A5",
+        "E-C1",
+        "P-A1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-B4",
+      "code": "P-B4",
+      "title": "Multiply binomials",
+      "description": "",
+      "dependencies": [
+        "P-B3",
+        "E-A5"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-B5",
+      "code": "P-B5",
+      "title": "Multiply polynomials of higher complexity",
+      "description": "",
+      "dependencies": [
+        "P-B4"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-B6",
+      "code": "P-B6",
+      "title": "Simplify polynomial expressions after operations",
+      "description": "",
+      "dependencies": [
+        "P-B1",
+        "P-B2",
+        "P-B3",
+        "P-B4",
+        "P-B5"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Polynomial operations"
+    },
+    {
+      "id": "P-C1",
+      "code": "P-C1",
+      "title": "Factor out the GCF from polynomials",
+      "description": "",
+      "dependencies": [
+        "E-A6",
+        "P-A1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Factoring foundations"
+    },
+    {
+      "id": "P-C2",
+      "code": "P-C2",
+      "title": "Factor trinomials with leading coefficient 1",
+      "description": "",
+      "dependencies": [
+        "P-B4",
+        "P-C1"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Factoring foundations"
+    },
+    {
+      "id": "P-C3",
+      "code": "P-C3",
+      "title": "Factor trinomials with leading coefficient not equal to 1",
+      "description": "",
+      "dependencies": [
+        "P-C2"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Factoring foundations"
+    },
+    {
+      "id": "P-C4",
+      "code": "P-C4",
+      "title": "Factor special products",
+      "description": "Examples may include difference of squares if included in course.",
+      "dependencies": [
+        "P-B4"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Factoring foundations"
+    },
+    {
+      "id": "P-C5",
+      "code": "P-C5",
+      "title": "Determine whether a polynomial is completely factored",
+      "description": "",
+      "dependencies": [
+        "P-C1",
+        "P-C2",
+        "P-C3",
+        "P-C4"
+      ],
+      "category": "Polynomials and Operations on Polynomials",
+      "subcategory": "Factoring foundations"
+    },
+    {
+      "id": "U-A1",
+      "code": "U-A1",
+      "title": "Recognize a quadratic relationship",
+      "description": "Compare with linear patterns.",
+      "dependencies": [
+        "L-D5",
+        "P-A2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Quadratic foundations"
+    },
+    {
+      "id": "U-A2",
+      "code": "U-A2",
+      "title": "Identify standard form of a quadratic function",
+      "description": "y = ax^2 + bx + c",
+      "dependencies": [
+        "U-A1",
+        "P-A1"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Quadratic foundations"
+    },
+    {
+      "id": "U-A3",
+      "code": "U-A3",
+      "title": "Evaluate quadratic expressions/functions",
+      "description": "",
+      "dependencies": [
+        "E-A2",
+        "U-A2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Quadratic foundations"
+    },
+    {
+      "id": "U-A4",
+      "code": "U-A4",
+      "title": "Generate a table for a quadratic function",
+      "description": "",
+      "dependencies": [
+        "U-A3"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Quadratic foundations"
+    },
+    {
+      "id": "U-A5",
+      "code": "U-A5",
+      "title": "Graph a quadratic from a table",
+      "description": "",
+      "dependencies": [
+        "U-A4",
+        "F-D1"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Quadratic foundations"
+    },
+    {
+      "id": "U-B1",
+      "code": "U-B1",
+      "title": "Identify the vertex from a graph",
+      "description": "",
+      "dependencies": [
+        "U-A5"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Features of quadratic graphs"
+    },
+    {
+      "id": "U-B2",
+      "code": "U-B2",
+      "title": "Identify axis of symmetry from a graph",
+      "description": "",
+      "dependencies": [
+        "U-B1"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Features of quadratic graphs"
+    },
+    {
+      "id": "U-B3",
+      "code": "U-B3",
+      "title": "Identify maximum or minimum value from a graph",
+      "description": "",
+      "dependencies": [
+        "U-B1"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Features of quadratic graphs"
+    },
+    {
+      "id": "U-B4",
+      "code": "U-B4",
+      "title": "Identify x-intercepts and y-intercept of a quadratic graph",
+      "description": "",
+      "dependencies": [
+        "U-A5"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Features of quadratic graphs"
+    },
+    {
+      "id": "U-B5",
+      "code": "U-B5",
+      "title": "Interpret key features of quadratic functions in context",
+      "description": "",
+      "dependencies": [
+        "U-B1",
+        "U-B2",
+        "U-B3",
+        "U-B4"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Features of quadratic graphs"
+    },
+    {
+      "id": "U-C1",
+      "code": "U-C1",
+      "title": "Solve quadratic equations by graphing",
+      "description": "",
+      "dependencies": [
+        "U-B4",
+        "U-A5"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Solving quadratic equations"
+    },
+    {
+      "id": "U-C2",
+      "code": "U-C2",
+      "title": "Solve quadratic equations by factoring",
+      "description": "",
+      "dependencies": [
+        "P-C2",
+        "P-C3",
+        "U-A2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Solving quadratic equations"
+    },
+    {
+      "id": "U-C3",
+      "code": "U-C3",
+      "title": "Apply the zero-product property",
+      "description": "",
+      "dependencies": [
+        "U-C2",
+        "Q-A1"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Solving quadratic equations"
+    },
+    {
+      "id": "U-C4",
+      "code": "U-C4",
+      "title": "Solve simple quadratic equations by square roots",
+      "description": "",
+      "dependencies": [
+        "E-C2",
+        "Q-A2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Solving quadratic equations"
+    },
+    {
+      "id": "U-C5",
+      "code": "U-C5",
+      "title": "Choose an appropriate method to solve a quadratic equation",
+      "description": "",
+      "dependencies": [
+        "U-C1",
+        "U-C2",
+        "U-C4"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Solving quadratic equations"
+    },
+    {
+      "id": "U-D1",
+      "code": "U-D1",
+      "title": "Recognize intercept form of a quadratic",
+      "description": "",
+      "dependencies": [
+        "U-C2",
+        "U-B4"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Forms of quadratics"
+    },
+    {
+      "id": "U-D2",
+      "code": "U-D2",
+      "title": "Recognize vertex form of a quadratic",
+      "description": "",
+      "dependencies": [
+        "U-B1",
+        "U-B2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Forms of quadratics"
+    },
+    {
+      "id": "U-D3",
+      "code": "U-D3",
+      "title": "Convert among forms conceptually when appropriate",
+      "description": "",
+      "dependencies": [
+        "U-A2",
+        "U-D1",
+        "U-D2"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Forms of quadratics"
+    },
+    {
+      "id": "U-D4",
+      "code": "U-D4",
+      "title": "Connect quadratic forms to graph features",
+      "description": "",
+      "dependencies": [
+        "U-D3"
+      ],
+      "category": "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+      "subcategory": "Forms of quadratics"
+    },
+    {
+      "id": "T-A1",
+      "code": "T-A1",
+      "title": "Read and interpret data displays",
+      "description": "Dot plots, histograms, box plots, scatter plots.",
+      "dependencies": [
+        "F-A10"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Single-variable data"
+    },
+    {
+      "id": "T-A2",
+      "code": "T-A2",
+      "title": "Compute mean, median, and range",
+      "description": "",
+      "dependencies": [
+        "F-A6",
+        "F-A7"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Single-variable data"
+    },
+    {
+      "id": "T-A3",
+      "code": "T-A3",
+      "title": "Interpret center and spread",
+      "description": "",
+      "dependencies": [
+        "T-A2"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Single-variable data"
+    },
+    {
+      "id": "T-A4",
+      "code": "T-A4",
+      "title": "Identify outliers and their effect on summary statistics",
+      "description": "",
+      "dependencies": [
+        "T-A3"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Single-variable data"
+    },
+    {
+      "id": "T-B1",
+      "code": "T-B1",
+      "title": "Interpret scatter plots",
+      "description": "",
+      "dependencies": [
+        "F-D1",
+        "T-A1"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "T-B2",
+      "code": "T-B2",
+      "title": "Identify positive, negative, and no association",
+      "description": "",
+      "dependencies": [
+        "T-B1"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "T-B3",
+      "code": "T-B3",
+      "title": "Distinguish correlation from causation at an introductory level",
+      "description": "",
+      "dependencies": [
+        "T-B2"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "T-B4",
+      "code": "T-B4",
+      "title": "Draw or interpret a line of best fit informally",
+      "description": "",
+      "dependencies": [
+        "T-B1",
+        "L-B3"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "T-B5",
+      "code": "T-B5",
+      "title": "Use a linear model to make predictions",
+      "description": "",
+      "dependencies": [
+        "T-B4",
+        "L-D4"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "T-B6",
+      "code": "T-B6",
+      "title": "Interpret residuals conceptually",
+      "description": "",
+      "dependencies": [
+        "T-B5"
+      ],
+      "category": "Statistics and Data Modeling (Often part of Algebra 1)",
+      "subcategory": "Bivariate data"
+    },
+    {
+      "id": "M1",
+      "code": "M1",
+      "title": "Make sense of problems",
+      "description": "Identify givens, unknowns, constraints.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M2",
+      "code": "M2",
+      "title": "Persevere in multi-step reasoning",
+      "description": "Sustain work through several transformations.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M3",
+      "code": "M3",
+      "title": "Reason quantitatively",
+      "description": "Interpret numbers, units, and relationships in context.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M4",
+      "code": "M4",
+      "title": "Construct and critique reasoning",
+      "description": "Explain why steps are valid.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M5",
+      "code": "M5",
+      "title": "Use representations strategically",
+      "description": "Move among words, tables, graphs, and equations.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M6",
+      "code": "M6",
+      "title": "Attend to precision",
+      "description": "Correct notation, labels, units, and arithmetic.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M7",
+      "code": "M7",
+      "title": "Look for structure",
+      "description": "Notice repeated forms, patterns, and useful rewrites.",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    },
+    {
+      "id": "M8",
+      "code": "M8",
+      "title": "Look for regularity in repeated reasoning",
+      "description": "Generalize procedures and patterns. --",
+      "dependencies": [],
+      "category": "Mathematical Practices Embedded Across the Graph",
+      "subcategory": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "F-A1",
+      "target": "F-A2"
+    },
+    {
+      "source": "F-A1",
+      "target": "F-A3"
+    },
+    {
+      "source": "F-A4",
+      "target": "F-A5"
+    },
+    {
+      "source": "F-A5",
+      "target": "F-A6"
+    },
+    {
+      "source": "F-A5",
+      "target": "F-A7"
+    },
+    {
+      "source": "F-A4",
+      "target": "F-A8"
+    },
+    {
+      "source": "F-A5",
+      "target": "F-A8"
+    },
+    {
+      "source": "F-A2",
+      "target": "F-A9"
+    },
+    {
+      "source": "F-A3",
+      "target": "F-A9"
+    },
+    {
+      "source": "F-A6",
+      "target": "F-A9"
+    },
+    {
+      "source": "F-A7",
+      "target": "F-A9"
+    },
+    {
+      "source": "F-A2",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A3",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A4",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A5",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A6",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A7",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A8",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A9",
+      "target": "F-A10"
+    },
+    {
+      "source": "F-A4",
+      "target": "F-B1"
+    },
+    {
+      "source": "F-A8",
+      "target": "F-B1"
+    },
+    {
+      "source": "F-B1",
+      "target": "F-B2"
+    },
+    {
+      "source": "F-A7",
+      "target": "F-B2"
+    },
+    {
+      "source": "F-B1",
+      "target": "F-B3"
+    },
+    {
+      "source": "F-B2",
+      "target": "F-B3"
+    },
+    {
+      "source": "F-B3",
+      "target": "F-B4"
+    },
+    {
+      "source": "F-A8",
+      "target": "F-B5"
+    },
+    {
+      "source": "F-B3",
+      "target": "F-B5"
+    },
+    {
+      "source": "F-A9",
+      "target": "F-C1"
+    },
+    {
+      "source": "F-C1",
+      "target": "F-C2"
+    },
+    {
+      "source": "F-C1",
+      "target": "F-C3"
+    },
+    {
+      "source": "F-A9",
+      "target": "F-C3"
+    },
+    {
+      "source": "F-A9",
+      "target": "F-C4"
+    },
+    {
+      "source": "F-C1",
+      "target": "F-C5"
+    },
+    {
+      "source": "F-C2",
+      "target": "F-C5"
+    },
+    {
+      "source": "F-C1",
+      "target": "F-C6"
+    },
+    {
+      "source": "F-C3",
+      "target": "F-C6"
+    },
+    {
+      "source": "F-C6",
+      "target": "F-C7"
+    },
+    {
+      "source": "F-A1",
+      "target": "F-C7"
+    },
+    {
+      "source": "F-A1",
+      "target": "F-D1"
+    },
+    {
+      "source": "F-D1",
+      "target": "F-D2"
+    },
+    {
+      "source": "F-B3",
+      "target": "F-D3"
+    },
+    {
+      "source": "F-D2",
+      "target": "F-D3"
+    },
+    {
+      "source": "F-C1",
+      "target": "E-A1"
+    },
+    {
+      "source": "F-C2",
+      "target": "E-A1"
+    },
+    {
+      "source": "E-A1",
+      "target": "E-A2"
+    },
+    {
+      "source": "F-C3",
+      "target": "E-A2"
+    },
+    {
+      "source": "E-A2",
+      "target": "E-A3"
+    },
+    {
+      "source": "F-A9",
+      "target": "E-A3"
+    },
+    {
+      "source": "E-A1",
+      "target": "E-A4"
+    },
+    {
+      "source": "F-C5",
+      "target": "E-A4"
+    },
+    {
+      "source": "E-A1",
+      "target": "E-A5"
+    },
+    {
+      "source": "F-C4",
+      "target": "E-A5"
+    },
+    {
+      "source": "E-A5",
+      "target": "E-A6"
+    },
+    {
+      "source": "E-A4",
+      "target": "E-A7"
+    },
+    {
+      "source": "E-A5",
+      "target": "E-A7"
+    },
+    {
+      "source": "E-A6",
+      "target": "E-A7"
+    },
+    {
+      "source": "E-A4",
+      "target": "E-B1"
+    },
+    {
+      "source": "E-A5",
+      "target": "E-B1"
+    },
+    {
+      "source": "E-A1",
+      "target": "E-B2"
+    },
+    {
+      "source": "E-B1",
+      "target": "E-B2"
+    },
+    {
+      "source": "E-A6",
+      "target": "E-B3"
+    },
+    {
+      "source": "E-B2",
+      "target": "E-B3"
+    },
+    {
+      "source": "F-C2",
+      "target": "E-B4"
+    },
+    {
+      "source": "E-A1",
+      "target": "E-B4"
+    },
+    {
+      "source": "E-B2",
+      "target": "E-B4"
+    },
+    {
+      "source": "E-B4",
+      "target": "E-B5"
+    },
+    {
+      "source": "F-A3",
+      "target": "E-C1"
+    },
+    {
+      "source": "E-C1",
+      "target": "E-C2"
+    },
+    {
+      "source": "F-A9",
+      "target": "E-C2"
+    },
+    {
+      "source": "E-C1",
+      "target": "E-C3"
+    },
+    {
+      "source": "E-C1",
+      "target": "E-C4"
+    },
+    {
+      "source": "E-C1",
+      "target": "E-C5"
+    },
+    {
+      "source": "E-C3",
+      "target": "E-C6"
+    },
+    {
+      "source": "E-C4",
+      "target": "E-C6"
+    },
+    {
+      "source": "E-C4",
+      "target": "E-C7"
+    },
+    {
+      "source": "F-A7",
+      "target": "E-C7"
+    },
+    {
+      "source": "E-C3",
+      "target": "E-C8"
+    },
+    {
+      "source": "E-C4",
+      "target": "E-C8"
+    },
+    {
+      "source": "E-C5",
+      "target": "E-C8"
+    },
+    {
+      "source": "E-C6",
+      "target": "E-C8"
+    },
+    {
+      "source": "E-C7",
+      "target": "E-C8"
+    },
+    {
+      "source": "F-C6",
+      "target": "Q-A1"
+    },
+    {
+      "source": "F-C6",
+      "target": "Q-A2"
+    },
+    {
+      "source": "Q-A1",
+      "target": "Q-A2"
+    },
+    {
+      "source": "Q-A2",
+      "target": "Q-A3"
+    },
+    {
+      "source": "E-A4",
+      "target": "Q-A3"
+    },
+    {
+      "source": "Q-A3",
+      "target": "Q-A4"
+    },
+    {
+      "source": "E-A7",
+      "target": "Q-A4"
+    },
+    {
+      "source": "Q-A4",
+      "target": "Q-A5"
+    },
+    {
+      "source": "E-A4",
+      "target": "Q-A5"
+    },
+    {
+      "source": "E-A5",
+      "target": "Q-A6"
+    },
+    {
+      "source": "Q-A4",
+      "target": "Q-A6"
+    },
+    {
+      "source": "Q-A5",
+      "target": "Q-A7"
+    },
+    {
+      "source": "Q-A5",
+      "target": "Q-A8"
+    },
+    {
+      "source": "E-B1",
+      "target": "Q-A8"
+    },
+    {
+      "source": "Q-A2",
+      "target": "Q-A9"
+    },
+    {
+      "source": "E-A2",
+      "target": "Q-A9"
+    },
+    {
+      "source": "F-C2",
+      "target": "Q-B1"
+    },
+    {
+      "source": "Q-A1",
+      "target": "Q-B1"
+    },
+    {
+      "source": "Q-B1",
+      "target": "Q-B2"
+    },
+    {
+      "source": "E-B4",
+      "target": "Q-B2"
+    },
+    {
+      "source": "Q-B2",
+      "target": "Q-B3"
+    },
+    {
+      "source": "Q-A4",
+      "target": "Q-B3"
+    },
+    {
+      "source": "Q-A9",
+      "target": "Q-B3"
+    },
+    {
+      "source": "Q-B3",
+      "target": "Q-B4"
+    },
+    {
+      "source": "F-A10",
+      "target": "Q-B4"
+    },
+    {
+      "source": "F-A1",
+      "target": "Q-C1"
+    },
+    {
+      "source": "F-C7",
+      "target": "Q-C1"
+    },
+    {
+      "source": "F-C7",
+      "target": "Q-C2"
+    },
+    {
+      "source": "Q-C1",
+      "target": "Q-C2"
+    },
+    {
+      "source": "Q-C2",
+      "target": "Q-C3"
+    },
+    {
+      "source": "Q-A3",
+      "target": "Q-C3"
+    },
+    {
+      "source": "Q-C3",
+      "target": "Q-C4"
+    },
+    {
+      "source": "Q-A4",
+      "target": "Q-C4"
+    },
+    {
+      "source": "Q-C2",
+      "target": "Q-C5"
+    },
+    {
+      "source": "F-A1",
+      "target": "Q-C5"
+    },
+    {
+      "source": "Q-C1",
+      "target": "Q-C6"
+    },
+    {
+      "source": "Q-C2",
+      "target": "Q-C6"
+    },
+    {
+      "source": "Q-B1",
+      "target": "Q-C7"
+    },
+    {
+      "source": "Q-C4",
+      "target": "Q-C7"
+    },
+    {
+      "source": "Q-C6",
+      "target": "Q-C7"
+    },
+    {
+      "source": "Q-C4",
+      "target": "Q-C8"
+    },
+    {
+      "source": "Q-C6",
+      "target": "Q-C8"
+    },
+    {
+      "source": "F-D1",
+      "target": "R-A1"
+    },
+    {
+      "source": "R-A1",
+      "target": "R-A2"
+    },
+    {
+      "source": "F-D3",
+      "target": "R-A2"
+    },
+    {
+      "source": "R-A1",
+      "target": "R-A3"
+    },
+    {
+      "source": "R-A1",
+      "target": "R-A4"
+    },
+    {
+      "source": "R-A3",
+      "target": "R-A4"
+    },
+    {
+      "source": "R-A4",
+      "target": "R-A5"
+    },
+    {
+      "source": "E-A2",
+      "target": "R-A5"
+    },
+    {
+      "source": "R-A5",
+      "target": "R-A6"
+    },
+    {
+      "source": "F-D2",
+      "target": "R-A6"
+    },
+    {
+      "source": "R-A2",
+      "target": "R-B1"
+    },
+    {
+      "source": "R-A4",
+      "target": "R-B1"
+    },
+    {
+      "source": "F-D2",
+      "target": "R-B2"
+    },
+    {
+      "source": "R-A6",
+      "target": "R-B2"
+    },
+    {
+      "source": "R-A4",
+      "target": "R-B3"
+    },
+    {
+      "source": "F-D1",
+      "target": "R-B3"
+    },
+    {
+      "source": "R-B1",
+      "target": "R-B4"
+    },
+    {
+      "source": "R-A5",
+      "target": "R-B4"
+    },
+    {
+      "source": "R-B1",
+      "target": "R-B5"
+    },
+    {
+      "source": "R-B4",
+      "target": "R-B5"
+    },
+    {
+      "source": "F-B3",
+      "target": "L-A1"
+    },
+    {
+      "source": "F-D3",
+      "target": "L-A1"
+    },
+    {
+      "source": "R-A6",
+      "target": "L-A1"
+    },
+    {
+      "source": "F-D1",
+      "target": "L-A2"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-A2"
+    },
+    {
+      "source": "L-A2",
+      "target": "L-A3"
+    },
+    {
+      "source": "F-A6",
+      "target": "L-A3"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-A4"
+    },
+    {
+      "source": "L-A3",
+      "target": "L-A4"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-A5"
+    },
+    {
+      "source": "L-A3",
+      "target": "L-A5"
+    },
+    {
+      "source": "L-A2",
+      "target": "L-A6"
+    },
+    {
+      "source": "E-A1",
+      "target": "L-B1"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-B1"
+    },
+    {
+      "source": "L-B1",
+      "target": "L-B2"
+    },
+    {
+      "source": "L-B2",
+      "target": "L-B3"
+    },
+    {
+      "source": "F-D1",
+      "target": "L-B3"
+    },
+    {
+      "source": "R-B1",
+      "target": "L-B4"
+    },
+    {
+      "source": "L-A4",
+      "target": "L-B4"
+    },
+    {
+      "source": "L-A3",
+      "target": "L-B5"
+    },
+    {
+      "source": "F-D1",
+      "target": "L-B5"
+    },
+    {
+      "source": "L-B3",
+      "target": "L-B6"
+    },
+    {
+      "source": "Q-A3",
+      "target": "L-B7"
+    },
+    {
+      "source": "L-B1",
+      "target": "L-B7"
+    },
+    {
+      "source": "L-B1",
+      "target": "L-C1"
+    },
+    {
+      "source": "Q-A4",
+      "target": "L-C1"
+    },
+    {
+      "source": "L-A3",
+      "target": "L-C2"
+    },
+    {
+      "source": "Q-A4",
+      "target": "L-C3"
+    },
+    {
+      "source": "L-C1",
+      "target": "L-C3"
+    },
+    {
+      "source": "L-C1",
+      "target": "L-C4"
+    },
+    {
+      "source": "L-C2",
+      "target": "L-C4"
+    },
+    {
+      "source": "L-C3",
+      "target": "L-C4"
+    },
+    {
+      "source": "L-C2",
+      "target": "L-C5"
+    },
+    {
+      "source": "L-A3",
+      "target": "L-C6"
+    },
+    {
+      "source": "L-C2",
+      "target": "L-C6"
+    },
+    {
+      "source": "L-A2",
+      "target": "L-C7"
+    },
+    {
+      "source": "L-B6",
+      "target": "L-C7"
+    },
+    {
+      "source": "L-C1",
+      "target": "L-C7"
+    },
+    {
+      "source": "L-A4",
+      "target": "L-C8"
+    },
+    {
+      "source": "L-C1",
+      "target": "L-C8"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-D1"
+    },
+    {
+      "source": "R-A4",
+      "target": "L-D1"
+    },
+    {
+      "source": "R-B4",
+      "target": "L-D2"
+    },
+    {
+      "source": "L-C4",
+      "target": "L-D2"
+    },
+    {
+      "source": "L-A5",
+      "target": "L-D3"
+    },
+    {
+      "source": "L-B7",
+      "target": "L-D3"
+    },
+    {
+      "source": "Q-B2",
+      "target": "L-D4"
+    },
+    {
+      "source": "L-C1",
+      "target": "L-D4"
+    },
+    {
+      "source": "R-A6",
+      "target": "L-D4"
+    },
+    {
+      "source": "L-D1",
+      "target": "L-D5"
+    },
+    {
+      "source": "R-B5",
+      "target": "L-D5"
+    },
+    {
+      "source": "F-D3",
+      "target": "L-D6"
+    },
+    {
+      "source": "L-A1",
+      "target": "L-D6"
+    },
+    {
+      "source": "L-B3",
+      "target": "S-A1"
+    },
+    {
+      "source": "R-A1",
+      "target": "S-A1"
+    },
+    {
+      "source": "S-A1",
+      "target": "S-A2"
+    },
+    {
+      "source": "L-B3",
+      "target": "S-A2"
+    },
+    {
+      "source": "Q-A5",
+      "target": "S-A3"
+    },
+    {
+      "source": "L-C4",
+      "target": "S-A3"
+    },
+    {
+      "source": "Q-A4",
+      "target": "S-A4"
+    },
+    {
+      "source": "E-A5",
+      "target": "S-A4"
+    },
+    {
+      "source": "S-A2",
+      "target": "S-A5"
+    },
+    {
+      "source": "S-A3",
+      "target": "S-A5"
+    },
+    {
+      "source": "S-A4",
+      "target": "S-A5"
+    },
+    {
+      "source": "S-A1",
+      "target": "S-A6"
+    },
+    {
+      "source": "S-A5",
+      "target": "S-A6"
+    },
+    {
+      "source": "S-A2",
+      "target": "S-A7"
+    },
+    {
+      "source": "S-A3",
+      "target": "S-A7"
+    },
+    {
+      "source": "S-A4",
+      "target": "S-A7"
+    },
+    {
+      "source": "Q-A8",
+      "target": "S-A7"
+    },
+    {
+      "source": "Q-B2",
+      "target": "S-A8"
+    },
+    {
+      "source": "L-D4",
+      "target": "S-A8"
+    },
+    {
+      "source": "Q-C6",
+      "target": "S-B1"
+    },
+    {
+      "source": "L-B3",
+      "target": "S-B1"
+    },
+    {
+      "source": "S-B1",
+      "target": "S-B2"
+    },
+    {
+      "source": "S-B1",
+      "target": "S-B3"
+    },
+    {
+      "source": "S-B2",
+      "target": "S-B3"
+    },
+    {
+      "source": "S-B3",
+      "target": "S-B4"
+    },
+    {
+      "source": "Q-C7",
+      "target": "S-B5"
+    },
+    {
+      "source": "S-B3",
+      "target": "S-B5"
+    },
+    {
+      "source": "E-A1",
+      "target": "P-A1"
+    },
+    {
+      "source": "E-C1",
+      "target": "P-A1"
+    },
+    {
+      "source": "P-A1",
+      "target": "P-A2"
+    },
+    {
+      "source": "P-A2",
+      "target": "P-A3"
+    },
+    {
+      "source": "E-A4",
+      "target": "P-B1"
+    },
+    {
+      "source": "P-A1",
+      "target": "P-B1"
+    },
+    {
+      "source": "E-A4",
+      "target": "P-B2"
+    },
+    {
+      "source": "P-A1",
+      "target": "P-B2"
+    },
+    {
+      "source": "E-A5",
+      "target": "P-B3"
+    },
+    {
+      "source": "E-C1",
+      "target": "P-B3"
+    },
+    {
+      "source": "P-A1",
+      "target": "P-B3"
+    },
+    {
+      "source": "P-B3",
+      "target": "P-B4"
+    },
+    {
+      "source": "E-A5",
+      "target": "P-B4"
+    },
+    {
+      "source": "P-B4",
+      "target": "P-B5"
+    },
+    {
+      "source": "P-B1",
+      "target": "P-B6"
+    },
+    {
+      "source": "P-B2",
+      "target": "P-B6"
+    },
+    {
+      "source": "P-B3",
+      "target": "P-B6"
+    },
+    {
+      "source": "P-B4",
+      "target": "P-B6"
+    },
+    {
+      "source": "P-B5",
+      "target": "P-B6"
+    },
+    {
+      "source": "E-A6",
+      "target": "P-C1"
+    },
+    {
+      "source": "P-A1",
+      "target": "P-C1"
+    },
+    {
+      "source": "P-B4",
+      "target": "P-C2"
+    },
+    {
+      "source": "P-C1",
+      "target": "P-C2"
+    },
+    {
+      "source": "P-C2",
+      "target": "P-C3"
+    },
+    {
+      "source": "P-B4",
+      "target": "P-C4"
+    },
+    {
+      "source": "P-C1",
+      "target": "P-C5"
+    },
+    {
+      "source": "P-C2",
+      "target": "P-C5"
+    },
+    {
+      "source": "P-C3",
+      "target": "P-C5"
+    },
+    {
+      "source": "P-C4",
+      "target": "P-C5"
+    },
+    {
+      "source": "L-D5",
+      "target": "U-A1"
+    },
+    {
+      "source": "P-A2",
+      "target": "U-A1"
+    },
+    {
+      "source": "U-A1",
+      "target": "U-A2"
+    },
+    {
+      "source": "P-A1",
+      "target": "U-A2"
+    },
+    {
+      "source": "E-A2",
+      "target": "U-A3"
+    },
+    {
+      "source": "U-A2",
+      "target": "U-A3"
+    },
+    {
+      "source": "U-A3",
+      "target": "U-A4"
+    },
+    {
+      "source": "U-A4",
+      "target": "U-A5"
+    },
+    {
+      "source": "F-D1",
+      "target": "U-A5"
+    },
+    {
+      "source": "U-A5",
+      "target": "U-B1"
+    },
+    {
+      "source": "U-B1",
+      "target": "U-B2"
+    },
+    {
+      "source": "U-B1",
+      "target": "U-B3"
+    },
+    {
+      "source": "U-A5",
+      "target": "U-B4"
+    },
+    {
+      "source": "U-B1",
+      "target": "U-B5"
+    },
+    {
+      "source": "U-B2",
+      "target": "U-B5"
+    },
+    {
+      "source": "U-B3",
+      "target": "U-B5"
+    },
+    {
+      "source": "U-B4",
+      "target": "U-B5"
+    },
+    {
+      "source": "U-B4",
+      "target": "U-C1"
+    },
+    {
+      "source": "U-A5",
+      "target": "U-C1"
+    },
+    {
+      "source": "P-C2",
+      "target": "U-C2"
+    },
+    {
+      "source": "P-C3",
+      "target": "U-C2"
+    },
+    {
+      "source": "U-A2",
+      "target": "U-C2"
+    },
+    {
+      "source": "U-C2",
+      "target": "U-C3"
+    },
+    {
+      "source": "Q-A1",
+      "target": "U-C3"
+    },
+    {
+      "source": "E-C2",
+      "target": "U-C4"
+    },
+    {
+      "source": "Q-A2",
+      "target": "U-C4"
+    },
+    {
+      "source": "U-C1",
+      "target": "U-C5"
+    },
+    {
+      "source": "U-C2",
+      "target": "U-C5"
+    },
+    {
+      "source": "U-C4",
+      "target": "U-C5"
+    },
+    {
+      "source": "U-C2",
+      "target": "U-D1"
+    },
+    {
+      "source": "U-B4",
+      "target": "U-D1"
+    },
+    {
+      "source": "U-B1",
+      "target": "U-D2"
+    },
+    {
+      "source": "U-B2",
+      "target": "U-D2"
+    },
+    {
+      "source": "U-A2",
+      "target": "U-D3"
+    },
+    {
+      "source": "U-D1",
+      "target": "U-D3"
+    },
+    {
+      "source": "U-D2",
+      "target": "U-D3"
+    },
+    {
+      "source": "U-D3",
+      "target": "U-D4"
+    },
+    {
+      "source": "F-A10",
+      "target": "T-A1"
+    },
+    {
+      "source": "F-A6",
+      "target": "T-A2"
+    },
+    {
+      "source": "F-A7",
+      "target": "T-A2"
+    },
+    {
+      "source": "T-A2",
+      "target": "T-A3"
+    },
+    {
+      "source": "T-A3",
+      "target": "T-A4"
+    },
+    {
+      "source": "F-D1",
+      "target": "T-B1"
+    },
+    {
+      "source": "T-A1",
+      "target": "T-B1"
+    },
+    {
+      "source": "T-B1",
+      "target": "T-B2"
+    },
+    {
+      "source": "T-B2",
+      "target": "T-B3"
+    },
+    {
+      "source": "T-B1",
+      "target": "T-B4"
+    },
+    {
+      "source": "L-B3",
+      "target": "T-B4"
+    },
+    {
+      "source": "T-B4",
+      "target": "T-B5"
+    },
+    {
+      "source": "L-D4",
+      "target": "T-B5"
+    },
+    {
+      "source": "T-B5",
+      "target": "T-B6"
+    }
+  ],
+  "categories": [
+    "Foundational Readiness Nodes",
+    "Expressions and Algebraic Structure",
+    "Equations and Inequalities",
+    "Relations and Functions",
+    "Linear Functions and Linear Equations",
+    "Systems of Linear Equations and Inequalities",
+    "Polynomials and Operations on Polynomials",
+    "Quadratic Functions and Equations (Common Algebra 1 Inclusion)",
+    "Statistics and Data Modeling (Often part of Algebra 1)",
+    "Mathematical Practices Embedded Across the Graph"
+  ]
+}
